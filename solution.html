@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Debugging Solution</title>
+    <style>
+        /* FIX 1: Add px unit */
+        body {
+            font-size: 16px;
+            /* FIX 2: Add commas between font names */
+            font-family: Arial, "Times New Roman", sans-serif;
+            background: #f0f0f0;
+        }
+
+        /* FIX 3: Use 6-digit hex code */
+        .header-text {
+            color: #076f6c;
+            /* FIX 4: Add semicolon */
+            font-size: 24px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        /* FIX 5: Remove extra # symbol */
+        #main-content {
+            /* FIX 6: Use correct RGB syntax */
+            background-color: rgb(48, 151, 25);
+            /* FIX 7: Remove space in value */
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 12px;
+        }
+
+        /* FIX 8: Use proper padding shorthand */
+        .content-box {
+            padding: 10px 15px;
+            /* FIX 9: Correct border style */
+            border: 2px solid black;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+        }
+
+        /* FIX 10: Add % unit for circle */
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* FIX 11: Remove trailing . in selector */
+        .feature-box {
+            /* FIX 12: Add px unit */
+            margin: -10px;
+            /* FIX 13: Use correct RGB syntax */
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            align-items: center;
+        }
+
+        /* FIX 14: Add closing ] */
+        [type="button"] {
+            /* FIX 15: Complete margin declaration */
+            margin: 5px 10px 5px 10px;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border-radius: 4px;
+        }
+
+        /* FIX 16: Use valid RGBA syntax */
+        .colored-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* FIX 17: Add px units */
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        /* FIX 18: Resolve specificity conflict */
+        #special-text {
+            color: green !important;
+        }
+
+        /* FIX 19: Add px units */
+        .small-cat-image {
+            width: 150px;
+            height: 100px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* FIX 20: Add fallback font */
+        .large-text {
+            font-size: 24px;
+            font-family: "Custom Font", Arial, sans-serif;
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header-text">Welcome to CSS Debugging!</h1>
+    
+    <div id="main-content">
+        <div class="content-box">
+            <img class="profile-image" src="profile-pic.jpg" alt="Profile">
+            <p class="special-text">This text has multiple color styles - which one applies?</p>
+        </div>
+
+        <div class="feature-box">
+            <img class="small-cat-image" src="small-cat.jpg" alt="Small Cat">
+            <p class="large-text">This is a larger piece of text</p>
+        </div>
+
+        <div class="colored-section">
+            <p>This section has a background color and padding</p>
+            <button type="button">Click me!</button>
+        </div>
+    </div>
+</body>
+</html>
+
+

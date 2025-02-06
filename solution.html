@@ -14,7 +14,7 @@
         /* FIX 3: Use 6-digit hex code */
         .header-text {
             color: #076f6c;
-            /* FIX 4: Add semicolon */
+            /* FIX 4: Add semicolon the end of font-size and text-align */
             font-size: 24px;
             text-align: center;
             margin: 2rem 0;
@@ -55,7 +55,7 @@
         .feature-box {
             /* FIX 12: Add px unit */
             margin: -10px;
-            /* FIX 13: Use correct RGB syntax */
+            /* FIX 13: Use correct RGB syntax, add semi-colon after padding line and colon after align-items */
             background-color: rgb(240, 240, 240);
             display: flex;
             gap: 1rem;
@@ -84,9 +84,14 @@
             margin: 1rem 0;
         }
 
-        /* FIX 18: Resolve specificity conflict */
-        #special-text {
+        /* FIX 18: Changed from ID selectors to Class selectors using # instead of . also used !important to make it choose green */
+        .special-text {
+            color: blue;
+        }
+        
+        .special-text {
             color: green !important;
+            color: red;
         }
 
         /* FIX 19: Add px units */
@@ -97,7 +102,7 @@
             border-radius: 8px;
         }
 
-        /* FIX 20: Add fallback font */
+        /* FIX 20: Add px units */
         .large-text {
             font-size: 24px;
             font-family: "Custom Font", Arial, sans-serif;
